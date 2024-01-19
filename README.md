@@ -1,25 +1,27 @@
 # Research
 Data set selection
 The data set Ham and Spam emails from spam Assassin provide at ](https://www.kaggle.com/veleon/ham-and-spam-dataset). It contains several spam and non-spam email files all readable by Python Email Library.
+
 1.Import libraries.
+
 2.Get the directory segmentation.
 	['ham', 'hamnspam', 'spam']
+ 
 3.Reading Data Set Files Records and dataset structure.
 	Amount of ham emails:  2551
 	Amount of spam emails:  501
 	Spam percentage:  16.41546526867628 %
+ 
 4.Load an email and check how it looks like. (Using email.parser-https://docs.python.org/3/library/email.parser.html)
 	Header field names:  ['Return-Path', 'Delivered-To', 'Received', 'Received', 'Received', 'Received', 'Delivered-To', 'Received', 'Received', 'Received', 'Received', 'Received', 'Received', 'From', 'To', 'Cc', 'Subject', 'In-Reply-To', 'References', 'MIME-Version', 'Content-Type', 'Message-Id', 'X-Loop', 'Sender', 'Errors-To', 'X-Beenthere', 'X-Mailman-Version', 'Precedence', 'List-Help', 'List-Post', 'List-Subscribe', 'List-Id', 'List-Unsubscribe', 'List-Archive', 'Date']
 
  -------------------------------------- 
 
-Message field values:  ['<exmh-workers-admin@example.com>', 'zzzz@localhost.netnoteinc.com', 'from localhost (localhost [127.0.0.1])\tby phobos.labs.netnoteinc.com (Postfix) with ESMTP id D03E543C36\tfor <zzzz@localhost>; Thu, 22 Aug 2002 07:36:16 -0400 (EDT)', 'from phobos [127.0.0.1]\tby localhost with IMAP (fetchmail-5.9.0)\tfor zzzz@localhost (single-drop); Thu, 22 Aug 2002 12:36:16 +0100 (IST)', 'from listman.example.com (listman.example.com [66.187.233.211]) by    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MBYrZ04811 for    <zzzz-exmh@example.com>; Thu, 22 Aug 2002 12:34:53 +0100', 'from listman.example.com (localhost.localdomain [127.0.0.1]) by    listman.redhat.com (Postfix) with ESMTP id 8386540858; Thu, 22 Aug 2002    07:35:02 -0400 (EDT)', 'exmh-workers@listman.example.com', 'from int-mx1.corp.example.com (int-mx1.corp.example.com    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 10CF8406D7    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 07:34:10 -0400    (EDT)', '(from mail@localhost) by int-mx1.corp.example.com (8.11.6/8.11.6)    id g7MBY7g11259 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002    07:34:07 -0400', 'from mx1.example.com (mx1.example.com [172.16.48.31]) by    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7MBY7Y11255 for    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 07:34:07 -0400', 'from ratree.psu.ac.th ([202.28.97.6]) by mx1.example.com    (8.11.6/8.11.6) with SMTP id g7MBIhl25223 for <exmh-workers@redhat.com>;    Thu, 22 Aug 2002 07:18:55 -0400', 'from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by    ratree.psu.ac.th (8.11.6/8.11.6) with ESMTP id g7MBWel29762;    Thu, 22 Aug 2002 18:32:40 +0700 (ICT)', 'from munnari.OZ.AU (localhost [127.0.0.1]) by delta.cs.mu.OZ.AU    (8.11.6/8.11.6) with ESMTP id g7MBQPW13260; Thu, 22 Aug 2002 18:26:25    +0700 (ICT)', 'Robert Elz <kre@munnari.OZ.AU>', 'Chris Garrigues <cwg-dated-1030377287.06fa6d@DeepEddy.Com>', 'exmh-workers@example.com', 'Re: New Sequences Window', '<1029945287.4797.TMDA@deepeddy.vircio.com>', '<1029945287.4797.TMDA@deepeddy.vircio.com>    <1029882468.3116.TMDA@deepeddy.vircio.com> <9627.1029933001@munnari.OZ.AU>    <1029943066.26919.TMDA@deepeddy.vircio.com>    <1029944441.398.TMDA@deepeddy.vircio.com>', '1.0', 'text/plain; charset="us-ascii"', '<13258.1030015585@munnari.OZ.AU>', 'exmh-workers@example.com', 'exmh-workers-admin@example.com', 'exmh-workers-admin@example.com', 'exmh-workers@example.com', '2.0.1', 'bulk', '<mailto:exmh-workers-request@example.com?subject=help>', '<mailto:exmh-workers@example.com>', '<https://listman.example.com/mailman/listinfo/exmh-workers>,    <mailto:exmh-workers-request@redhat.com?subject=subscribe>', 'Discussion list for EXMH developers <exmh-workers.example.com>', '<https://listman.example.com/mailman/listinfo/exmh-workers>,    <mailto:exmh-workers-request@redhat.com?subject=unsubscribe>', '<https://listman.example.com/mailman/private/exmh-workers/>', 'Thu, 22 Aug 2002 18:26:25 +0700']
+Message field values:  ['<exmh-workers-admin@example.com>', 'zzzz@localhost.netnoteinc.com', 'from localhost (localhost [127.0.0.1])\tby phobos.labs.netnoteinc.com (Postfix) with ESMTP id D03E543C36\tfor <zzzz@localhost>; Thu, 22 Aug 2002 07:36:16 -0400 (EDT)', 'from phobos [127.0.0.1]\tby localhost with IMAP (fetchmail-5.9.0)\tfor zzzz@localhost (single-drop); Thu, 22 Aug 2002 12:36:16 +0100 (IST)', 'from listman.example.com (listman.example.com [66.187.233.211]) by    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7MBYrZ04811 for    <zzzz-exmh@example.com>; Thu, 22 Aug 2002 12:34:53 +0100', 'from listman.example.com (localhost.localdomain [127.0.0.1]) by    listman.redhat.com (Postfix) with ESMTP id 8386540858; Thu, 22 Aug 2002    07:35:02 -0400 (EDT)', 'exmh-workers@listman.example.com', 'from int-mx1.corp.example.com (int-mx1.corp.example.com    [172.16.52.254]) by listman.redhat.com (Postfix) with ESMTP id 10CF8406D7    for <exmh-workers@listman.redhat.com>; Thu, 22 Aug 2002 07:34:10 -0400    (EDT)', '(from mail@localhost) by int-mx1.corp.example.com (8.11.6/8.11.6)    id g7MBY7g11259 for exmh-workers@listman.redhat.com; Thu, 22 Aug 2002    07:34:07 -0400', 'from mx1.example.com (mx1.example.com [172.16.48.31]) by    int-mx1.corp.redhat.com (8.11.6/8.11.6) with SMTP id g7MBY7Y11255 for    <exmh-workers@redhat.com>; Thu, 22 Aug 2002 07:34:07 -0400', 'from ratree.psu.ac.th ([202.28.97.6]) by mx1.example.com    (8.11.6/8.11.6) with SMTP id g7MBIhl25223 for <exmh-workers@redhat.com>;    Thu, 22 Aug 2002 07:18:55 -0400', 'from delta.cs.mu.OZ.AU (delta.coe.psu.ac.th [172.30.0.98]) by    
 
  -------------------------------------- 
 
 Message content:     Date: 
-
-	
 
 
 Data Preprocessing.
@@ -28,6 +30,7 @@ Feature Extraction
 	Email from:  ['Robert Elz <kre@munnari.OZ.AU>']
 	Email to:  ['Chris Garrigues <cwg-dated-1030377287.06fa6d@DeepEddy.Com>']
 	Email subject:  ['Re: New Sequences Window']
+ 
 
 6. Import all emails.
 	
