@@ -48,13 +48,14 @@ For me it is very repeatable... (like every time, without fail).
 
 Converting emails to plain text
 	 
-7. Check email content types
+7.Check email content types
 	Ham content types:  {'multipart/report', 'text/plain', 'multipart/alternative', 'multipart/mixed', 'multipart/related', 'multipart/signed'}
 	Spam content types:  {'text/plain', 'multipart/alternative', 'multipart/mixed', 'multipart/related', 'text/html'}
 
 8.Check multipart email content types/structure
 	Ham content types:  {'multipart(multipart(text/plain, text/plain, text/plain), application/pgp-signature)', 'multipart(text/plain, video/mng)', 'text/plain', 'multipart(text/plain, text/enriched)', 'multipart(text/plain, application/ms-tnef, text/plain)', 'multipart(text/plain, text/plain)', 'multipart(text/plain, application/x-pkcs7-signature)', 'multipart(text/plain, multipart(text/plain, text/plain), text/rfc822-headers)', 'multipart(text/plain, application/x-java-applet)', 'multipart(text/plain, application/pgp-signature)', 'multipart(text/plain)', 'multipart(text/plain, application/octet-stream)', 'multipart(text/plain, multipart(text/plain, text/plain), multipart(multipart(text/plain, application/x-pkcs7-signature)))', 'multipart(text/plain, text/html)', 'multipart(text/plain, multipart(text/plain))'}
 Spam content types:  {'multipart(multipart(text/plain, text/html), image/gif)', 'multipart(multipart(text/html), application/octet-stream, image/jpeg)', 'text/plain', 'multipart(text/html, application/octet-stream)', 'multipart/alternative', 'multipart(multipart(text/html))', 'multipart(text/plain)', 'multipart(text/html, text/plain)', 'multipart(text/plain, image/jpeg)', 'multipart(text/plain, application/octet-stream)', 'multipart(text/html)', 'text/html', 'multipart(text/plain, text/html)'}
+
 9.Convert HTML emails to plain format.
 	 
 10.Convert all HTML emails to plain text.
