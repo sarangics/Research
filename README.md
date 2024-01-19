@@ -44,21 +44,6 @@ Feature Extraction
 
 For me it is very repeatable... (like every time, without fail).
 
-This is the debug log of the pick happening ...
-
-18:19:03 Pick_It {exec pick +inbox -list -lbrace -lbrace -subject ftp -rbrace -rbrace} {4852-4852 -sequence mercury}
-18:19:03 exec pick +inbox -list -lbrace -lbrace -subject ftp -rbrace -rbrace 4852-4852 -sequence mercury
-18:19:04 Ftoc_PickMsgs {{1 hit}}
-18:19:04 Marking 1 hits
-18:19:04 tkerror: syntax error in expression "int ...
-
-Note, if I run the pick command by hand ...
-
-delta$ pick +inbox -list -lbrace -lbrace -subject ftp -rbrace -rbrace  4852-4852 -sequence mercury
-1 hit
-
-That's where the "1 hit" comes from (obviously).  The version of nmh I'm
-using is ...
 
 
 Converting emails to plain text
