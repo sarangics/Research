@@ -32,7 +32,7 @@ Feature Extraction
 	Email subject:  ['Re: New Sequences Window']
  
 
-6. Import all emails.
+6.Import all emails.
 	
 	['Re: New Sequences Window']
     Date:        Wed, 21 Aug 2002 10:54:46 -0500
@@ -88,6 +88,7 @@ BANK,New York.You can do
 
 11.Removing unknown encoding with spam emails.
 Building the dataset to train a data model
+
 12. Create a data frame with the email’s content and their particular label. (ham-0,spam-1)
 	 
 	
@@ -97,7 +98,7 @@ Building the dataset to train a data model
 	
 	
 	
-14. Removing special characters from the data frame. And convert to lowercase letters
+14.Removing special characters from the data frame. And convert to lowercase letters
 	Email content	Label
 0	hello fork so they have aaron schwartz on n...	0
 1	on mon 2 sep 2002 reza b'far ebuilt wrote: w...	0
