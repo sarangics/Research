@@ -667,8 +667,7 @@ Train the Model for 01 epochs.
 ![image](https://github.com/sarangics/Research/assets/65746767/078f95fb-ca34-433c-8948-ea48e01f36ed)
 Combining LSTM and SVM algorithms
 Accuracy 74%
-Using NB, SVM, LR, RF and DT algorithms for spam emails classification
-![image](https://github.com/sarangics/Research/assets/65746767/8865e27e-7bc5-4421-9d8a-aff62d738093)
+
 
 
 
